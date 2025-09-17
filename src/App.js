@@ -1,6 +1,15 @@
+import Card from "./components/Card";
+import Greetting from "./components/Greetting";
+import Counter from './components/Counter';
+
 function App() {
   return (
-    <div className="App">송주령바보</div>
+    <div className="App">
+      <Greetting/>
+      <Card/>
+      <Counter/>
+
+    </div>
   );
 }
 
