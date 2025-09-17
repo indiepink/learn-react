@@ -1,6 +1,7 @@
 import Card from "./components/Card";
 import Greetting from "./components/Greetting";
 import Counter from './components/Counter';
+import Logical from "./components/Logical";
 
 function App() {
   // logic
@@ -15,6 +16,7 @@ function App() {
   //view
   return (
     <div className="App">
+      <Logical />
       <Greetting username="슈퍼스타 송상훈"/>
       <Greetting username="인기스타 송상훈"/>
       <Greetting username="송주령똥꾸멍"/>
