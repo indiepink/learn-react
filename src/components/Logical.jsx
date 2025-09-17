@@ -59,7 +59,7 @@ const Logical = () => {
   console.log("🚀 ~ Logical ~ copyColors:", copyColors);
   console.log("🚀 ~ Logical ~ colors:", colors); // 원본 배열은 그대로
   
-  const copyPerson = {...person, isAttendent: true, mbti : "esfj"};
+  const copyPerson = {...person, isAttendent: true, mbti : "esfj"}; // 없으면 새로 추가, 있으면 값 변경
   console.log("🚀 ~ Logical ~ copyPerson:", copyPerson);
   // view
   return (

@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // 한 번만 실행하기 위해 <React.StrictMode> 주석처리
   //<React.StrictMode>
-    <App />
+  <App />
   //</React.StrictMode>
 );
 

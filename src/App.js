@@ -1,30 +1,19 @@
-import Card from "./components/Card";
-import Greetting from "./components/Greetting";
-import Counter from './components/Counter';
-import Logical from "./components/Logical";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
-  // logic
-  const handleIncrease = () => {
-    console.log("➕ 더하기 버튼 클릭!");
-  }
-
-  const handleDecrease = () => {
-    console.log("➖ 빼기 버튼 클릭!");
-  }
-
+  //logic
+  // 페이지 3개: Home, About, Contact
   //view
   return (
-    <div className="App">
-      <Logical />
-      <Greetting username="슈퍼스타 송상훈"/>
-      <Greetting username="인기스타 송상훈"/>
-      <Greetting username="송주령똥꾸멍"/>
-      <Card/>
-      <Counter onIncreaseClick={handleIncrease} onDecreaseClick={handleDecrease}/>
-      {/* 미션: 숫자가 5씩 증가하는 컴포넌트 만들기 */}
-      <Counter cnt = {5} onIncreaseClick={handleIncrease} onDecreaseClick={handleDecrease}/>
-    </div>
+    // path 값은 소문자로 작성
+    <BrowserRouter>
+      <Routes><Route path="/" element={<Home/>}/></Routes>
+      <Routes><Route path="/about" element={<About/>}/></Routes>
+      <Routes><Route path="/contact" element={<Contact/>}/></Routes>
+    </BrowserRouter>
   );
 }
 
